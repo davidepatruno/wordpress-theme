@@ -2,7 +2,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-10">
+      <div class="col-9">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="post_wrapper">
           <h1 title="<?php the_title(); ?>">
@@ -17,7 +17,7 @@
 <p><?php _e('Nessun articolo corrisponde ai criteri di ricerca.'); ?></p>
 <?php endif; ?>
       </div>
-      <div class="col-2">
+      <div class="col-3 side_widg">
         <?php get_sidebar(); ?>
       </div>
     </div>
